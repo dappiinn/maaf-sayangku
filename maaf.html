@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaf Sayang ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(-45deg, #ff6b6b, #feca57, #ff9ff3, #54a0ff);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .heart {
+            position: absolute;
+            color: rgba(255,255,255,0.8);
+            font-size: 20px;
+            animation: float 6s infinite linear;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            padding: 60px 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            max-width: 600px;
+            animation: slideIn 1s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .emoji {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5em;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .apology-text {
+            font-size: 1.3em;
+            color: #2c3e50;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .promise {
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 30px 0;
+            box-shadow: 0 10px 20px rgba(255,107,107,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .love-letter {
+            background: rgba(255, 182, 193, 0.3);
+            border: 2px dashed #ff69b4;
+            border-radius: 20px;
+            padding: 30px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #8b008b;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(255,107,107,0.4);
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(255,107,107,0.6);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            .content { padding: 40px 20px; margin: 20px; }
+            .emoji { font-size: 60px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="hearts" id="hearts"></div>
+    
+    <div class="container">
+        <div class="content">
+            <div class="emoji">😢💔</div>
+            <h1>Maaf Sayangku ❤️</h1>
+            
+            <p class="apology-text">
+                Sayangku yang tersayang, aku tahu aku sudah membuatmu sedih. 
+                Aku benar-benar menyesal atas semua yang telah kulakukan. 
+                Kamu adalah segalanya bagiku. 💕
+            </p>
+
+            <div class="promise">
+                💝 Janji: Aku akan berusaha menjadi yang lebih baik untukmu! 💝
+            </div>
+
+            <div class="love-letter">
+                "Kamu adalah alasan aku tersenyum setiap hari. 
+                Maafin aku ya sayang, aku nggak bisa hidup tanpa kamu. 
+                I love you more than yesterday, but less than tomorrow 💖"
+            </div>
+
+            <p class="apology-text">
+                Tolong maafin aku ya sayang... 
+                Aku janji akan lebih perhatian lagi ke depannya 🙏❤️
+            </p>
+
+            <button class="btn" onclick="forgive()">💕 Aku Maafin Kamu 💕</button>
+            <button class="btn" onclick="playMusic()">🎵 Putar Lagu Cinta 🎵</button>
+        </div>
+    </div>
+
+    <script>
+        // Hati beterbangan
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = '💖';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 3 + 4) + 's';
+            document.getElementById('hearts').appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 7000);
+        }
+
+        setInterval(createHeart, 300);
+
+        // Fungsi forgive
+        function forgive() {
+            confettiEffect();
+            document.querySelector('h1').innerHTML = 'YAY! Terima Kasih Sayang! 😍💕';
+            document.querySelector('.emoji').innerHTML = '😍💖✨';
+            document.querySelector('.promise').innerHTML = '🎉 Kita Baikan Lagi! Selamanya Bersama! 🎉';
+        }
+
+        // Efek confetti
+        function confettiEffect() {
+            for(let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.innerHTML = ['❤️','💕','💖','✨','🌟'][Math.floor(Math.random()*5)];
+                confetti.style.position = 'fixed';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.top = Math.random() * 100 + 'vh';
+                confetti.style.fontSize = '20px';
+                confetti.style.pointerEvents = 'none';
+                confetti.style.zIndex = '1000';
+                confetti.style.animation = 'float 3s linear forwards';
+                document.body.appendChild(confetti);
+
+                setTimeout(() => confetti.remove(), 3000);
+            }
+        }
+
+        // Musik (opsional - uncomment jika ingin)
+        function playMusic() {
+            // Buat audio element
+            const audio = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAo');
+            audio.play().catch(e => alert('Musik tidak bisa dimainkan di browser ini 😅'));
+        }
+
+        // Tambah efek klik
+        document.addEventListener('click', function(e) {
+            if(e.target.tagName !== 'BUTTON') {
+                createHeart();
+            }
+        });
+    </script>
+</body>
+</html>
